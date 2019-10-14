@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="500" Width="700">
     <Grid>
-        <StackPanel Background="Transparent" Name="ContentPanel" MouseMove="ContentPanel_MouseMove" MouseEnter="ContentPanel_MouseEnter" MouseLeave="ContentPanel_MouseLeave">
+        <StackPanel Background="Transparent" Name="ContentPanel">
             <TextBlock Text="SomeText"/>
             <Button Content="This is a Button"/>
             <TextBlock Text="SomeText"/>
@@ -18,5 +18,6 @@
             <Button Content="This is a Button"/>
             <TextBlock Text="SomeText"/>
         </StackPanel>
+        <local:Magnifier ContentPanel="{Binding ElementName=ContentPanel}"></local:Magnifier>
     </Grid>
 </Window>
