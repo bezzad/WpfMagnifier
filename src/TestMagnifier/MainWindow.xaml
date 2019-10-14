@@ -48,6 +48,7 @@
                 </Path.Data>
             </Path>
         </StackPanel>
-        <local:Magnifier ContentPanel="{Binding ElementName=ContentPanel}"></local:Magnifier>
+
+        <local:Magnifier Stroke="blue" Radius="50" ZoomFactor="3" ContentPanel="{Binding ElementName=ContentPanel}"></local:Magnifier>
     </Grid>
 </Window>
