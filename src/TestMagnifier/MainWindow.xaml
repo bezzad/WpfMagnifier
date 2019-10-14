@@ -8,15 +8,45 @@
         Title="MainWindow" Height="500" Width="700">
     <Grid>
         <StackPanel Background="Transparent" Name="ContentPanel">
-            <TextBlock Text="SomeText"/>
-            <Button Content="This is a Button"/>
-            <TextBlock Text="SomeText"/>
-            <Button Content="This is a Button"/>
-            <TextBlock Text="SomeText"/>
-            <Button Content="This is a Button"/>
-            <TextBlock Text="SomeText"/>
-            <Button Content="This is a Button"/>
-            <TextBlock Text="SomeText"/>
+            <TextBlock Text="Sample"/>
+            <Button Width="388" Height="72">
+                <Button.FontWeight>
+                    <FontWeight>Bold</FontWeight>
+                </Button.FontWeight>
+                <WrapPanel>
+                    <TextBlock Foreground="Blue"><Run Text="Multi"/></TextBlock>
+                    <TextBlock Foreground="Red"><Run Text="Color"/></TextBlock>
+                    <TextBlock><Run Text="Button"/></TextBlock>
+                </WrapPanel>
+            </Button>
+
+            <Ellipse Width = "100" Height = "60" Name = "sample" Margin = "10">
+                <Ellipse.Fill>
+                    <RadialGradientBrush>
+                        <GradientStop Offset = "0" Color = "AliceBlue"/>
+                        <GradientStop Offset = "1" Color = "Gray"/>
+                        <GradientStop Offset = "2" Color = "Red"/>
+                    </RadialGradientBrush>
+                </Ellipse.Fill>
+            </Ellipse>
+
+            <Path Stroke = "Red" StrokeThickness = "5" Data = "M 10,70 L 200,70"
+                  Height = "42.085" Stretch = "Fill" Margin = "140.598,0,146.581,0" />
+            <Path Stroke = "BlueViolet" StrokeThickness = "5" Data = "M 20,100 A 100,56 42 1 0 200,10"
+                  Height = "81.316" Stretch = "Fill" Margin = "236.325,0,211.396,0" />
+
+            <Path Fill = "LightCoral" Margin = "201.424,0,236.325,0"
+                  Stretch = "Fill" Height = "124.929">
+                <Path.Data>
+                    <PathGeometry>
+                        <PathFigure StartPoint = "50,0" IsClosed = "True">
+                            <LineSegment Point = "100,50"/>
+                            <LineSegment Point = "50,100"/>
+                            <LineSegment Point = "0,50"/>
+                        </PathFigure>
+                    </PathGeometry>
+                </Path.Data>
+            </Path>
         </StackPanel>
         <local:Magnifier ContentPanel="{Binding ElementName=ContentPanel}"></local:Magnifier>
     </Grid>
