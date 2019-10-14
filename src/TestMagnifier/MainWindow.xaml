@@ -1,0 +1,22 @@
+﻿<Window x:Class="TestMagnifier.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestMagnifier"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="700">
+    <Grid>
+        <StackPanel Background="Transparent" Name="ContentPanel" MouseMove="ContentPanel_MouseMove" MouseEnter="ContentPanel_MouseEnter" MouseLeave="ContentPanel_MouseLeave">
+            <TextBlock Text="SomeText"/>
+            <Button Content="This is a Button"/>
+            <TextBlock Text="SomeText"/>
+            <Button Content="This is a Button"/>
+            <TextBlock Text="SomeText"/>
+            <Button Content="This is a Button"/>
+            <TextBlock Text="SomeText"/>
+            <Button Content="This is a Button"/>
+            <TextBlock Text="SomeText"/>
+        </StackPanel>
+    </Grid>
+</Window>
