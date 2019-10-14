@@ -1,4 +1,4 @@
-# WpfMagnifier
-Magnifier control sample in WPF
+# Wpf Magnifier
+Magnifier sample in WPF
 
 ![sample](https://github.com/bezzad/WpfMagnifier/raw/master/sample.png)
